@@ -17,3 +17,52 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
 }
+
+@keyframes fadeZoom {
+  0% {
+    opacity: 0;
+    transform: scale(1.035);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes flipNext {
+  0% {
+    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
+    transform-origin: left top;
+  }
+  50% {
+    transform: perspective(1400px) rotateY(-20deg) rotateX(7deg) rotateZ(-1.5deg) translateY(-6px);
+  }
+  100% {
+    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
+    transform-origin: left top;
+  }
+}
+
+@keyframes flipPrev {
+  0% {
+    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
+    transform-origin: right top;
+  }
+  50% {
+    transform: perspective(1400px) rotateY(20deg) rotateX(7deg) rotateZ(1.5deg) translateY(-6px);
+  }
+  100% {
+    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
+    transform-origin: right top;
+  }
+}
+
+.calendar-flip-next {
+  animation: flipNext 520ms ease;
+  will-change: transform;
+}
+
+.calendar-flip-prev {
+  animation: flipPrev 520ms ease;
+  will-change: transform;
+}
