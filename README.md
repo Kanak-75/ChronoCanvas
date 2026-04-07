@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ChronoCanvas
 
 An interactive wall-calendar inspired component built with Next.js and React.
@@ -53,3 +54,6 @@ In your video demo, show:
 ## Deployment
 
 Deploy quickly on [Vercel](https://vercel.com/new), Netlify, or any static-friendly platform for Next.js.
+=======
+# ChronoCanvas
+>>>>>>> 061484976c4757909672ba45944c322589f14105
