@@ -1,59 +1,76 @@
-<<<<<<< HEAD
 # ChronoCanvas
 
-An interactive wall-calendar inspired component built with Next.js and React.
+An interactive wall-calendar component built with Next.js and React — where planning meets design.
 
-## What This Includes
+## 🌟 Features
 
-- Wall calendar aesthetic with a hero image and a tactile calendar grid
-- Start/end date range selection with clear visual states:
-  - start date
-  - end date
-  - in-between dates
-- Integrated notes section:
-  - month-level memo
-  - range-specific memo
-- Local persistence using `localStorage` (no backend)
-- Fully responsive layout:
-  - desktop: side-by-side calendar and notes panels
-  - mobile: stacked layout with touch-friendly controls
+### Wall Calendar Aesthetic
+Hero image with a tactile, visually clean calendar grid, mimicking a real wall calendar.
 
-## Tech Stack
+### Date Range Selection
+Select start and end dates with clear visual indicators for:
+- Start date
+- End date
+- Dates in between
+
+### Integrated Notes Section
+- Month-level memos
+- Range-specific notes
+- Auto-saved in `localStorage` (no backend required)
+
+### Responsive Design
+- Desktop: Side-by-side hero image, calendar, and notes panel
+- Mobile: Stacked layout with touch-friendly interactions
+
+### Local Persistence
+Your notes and selections remain intact after page refresh.
+
+### Extra UX Touches
+- Hover and selected state animations
+- Clean, minimal design for readability and interaction
+
+## 🛠 Tech Stack
 
 - Next.js (App Router)
 - React + TypeScript
 - Tailwind CSS
+- `date-fns` for date calculations
 
-## Run Locally
+## 🚀 Getting Started
+
+Clone the repo:
 
 ```bash
+git clone https://github.com/Kanak-75/ChronoCanvas.git
+cd ChronoCanvas
 npm install
 npm run dev
 ```
 
 Then open [http://localhost:3000](http://localhost:3000).
 
-## Scripts
+## 🎥 Demo Recording Checklist
+
+In your demo video, showcase:
+
+- Selecting a start and end date range
+- Visual states for selected range days
+- Writing month-level and range-specific notes
+- Refreshing the page to show persistence
+- Switching between desktop and mobile layouts
+
+## 📦 Available Scripts
 
 ```bash
-npm run dev
-npm run lint
-npm run build
+npm run dev     # Start development server
+npm run lint    # Check code quality
+npm run build   # Build for production
 ```
 
-## Demo Recording Checklist
+## 📤 Deployment
 
-In your video demo, show:
+Deploy instantly on [Vercel](https://vercel.com/new), Netlify, or any static-friendly hosting platform for Next.js.
 
-1. Selecting a start and end date range.
-2. Visual states for selected range days.
-3. Writing a monthly memo and a range memo.
-4. Refreshing the page to prove notes persist.
-5. Resizing from desktop to mobile view and interacting in both.
+## 🔗 Links
 
-## Deployment
-
-Deploy quickly on [Vercel](https://vercel.com/new), Netlify, or any static-friendly platform for Next.js.
-=======
-# ChronoCanvas
->>>>>>> 061484976c4757909672ba45944c322589f14105
+- GitHub: https://github.com/Kanak-75/ChronoCanvas
