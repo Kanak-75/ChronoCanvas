@@ -7,6 +7,14 @@ An interactive wall-calendar component built with Next.js and React — where pl
 ### Wall Calendar Aesthetic
 Hero image with a tactile, visually clean calendar grid, mimicking a real wall calendar.
 
+### Hero Story Theme
+Monthly hero visuals focus on real-world inspiration:
+- National heroes
+- Political/public leaders
+- Ancient heroes and heritage
+- Survivors
+- Mothers as everyday heroes
+
 ### Date Range Selection
 Select start and end dates with clear visual indicators for:
 - Start date
@@ -17,6 +25,11 @@ Select start and end dates with clear visual indicators for:
 - Month-level memos
 - Range-specific notes
 - Auto-saved in `localStorage` (no backend required)
+
+### Pure Frontend Scope
+- Fully client-side implementation
+- No backend, database, or API dependency
+- Uses browser storage for persistence
 
 ### Responsive Design
 - Desktop: Side-by-side hero image, calendar, and notes panel

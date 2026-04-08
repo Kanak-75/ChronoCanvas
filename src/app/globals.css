@@ -31,38 +31,84 @@ body {
 
 @keyframes flipNext {
   0% {
-    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
-    transform-origin: left top;
+    transform: perspective(1600px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(0);
+    transform-origin: right center;
   }
-  50% {
-    transform: perspective(1400px) rotateY(-20deg) rotateX(7deg) rotateZ(-1.5deg) translateY(-6px);
+  25% {
+    transform: perspective(1600px) rotateY(-14deg) rotateX(5deg) rotateZ(-0.8deg) translateX(-4px);
+  }
+  55% {
+    transform: perspective(1600px) rotateY(-78deg) rotateX(14deg) rotateZ(-2deg) translateX(-14px);
   }
   100% {
-    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
-    transform-origin: left top;
+    transform: perspective(1600px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(0);
+    transform-origin: right center;
   }
 }
 
 @keyframes flipPrev {
   0% {
-    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
-    transform-origin: right top;
+    transform: perspective(1600px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(0);
+    transform-origin: left center;
   }
-  50% {
-    transform: perspective(1400px) rotateY(20deg) rotateX(7deg) rotateZ(1.5deg) translateY(-6px);
+  25% {
+    transform: perspective(1600px) rotateY(14deg) rotateX(5deg) rotateZ(0.8deg) translateX(4px);
+  }
+  55% {
+    transform: perspective(1600px) rotateY(78deg) rotateX(14deg) rotateZ(2deg) translateX(14px);
   }
   100% {
-    transform: perspective(1400px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateY(0);
-    transform-origin: right top;
+    transform: perspective(1600px) rotateY(0deg) rotateX(0deg) rotateZ(0deg) translateX(0);
+    transform-origin: left center;
   }
 }
 
 .calendar-flip-next {
-  animation: flipNext 520ms ease;
+  animation: flipNext 960ms cubic-bezier(0.16, 0.74, 0.22, 1);
   will-change: transform;
 }
 
 .calendar-flip-prev {
-  animation: flipPrev 520ms ease;
+  animation: flipPrev 960ms cubic-bezier(0.16, 0.74, 0.22, 1);
   will-change: transform;
+}
+
+@keyframes grabShadowNext {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 0 0 88%);
+  }
+  55% {
+    opacity: 1;
+    clip-path: inset(0 0 0 62%);
+  }
+  100% {
+    opacity: 0;
+    clip-path: inset(0 0 0 88%);
+  }
+}
+
+@keyframes grabShadowPrev {
+  0% {
+    opacity: 0;
+    clip-path: inset(0 88% 0 0);
+  }
+  55% {
+    opacity: 1;
+    clip-path: inset(0 62% 0 0);
+  }
+  100% {
+    opacity: 0;
+    clip-path: inset(0 88% 0 0);
+  }
+}
+
+.calendar-grab-next {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.08), transparent);
+  animation: grabShadowNext 960ms ease;
+}
+
+.calendar-grab-prev {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.38), rgba(0, 0, 0, 0.08), transparent);
+  animation: grabShadowPrev 960ms ease;
 }
