@@ -80,6 +80,22 @@ npm run lint    # Check code quality
 npm run build   # Build for production
 ```
 
+
+
+
+
 ## 🔗 Links
 
 - GitHub: https://github.com/Kanak-75/ChronoCanvas
+
+## 🎬 Demo
+
+[▶ Watch Screen Recording](https://github.com/user-attachments/assets/b0c8750d-73bc-4296-9159-a824b6700bcb)
+
+
+
+
+
+
+
+
