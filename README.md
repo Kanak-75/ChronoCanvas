@@ -80,10 +80,6 @@ npm run lint    # Check code quality
 npm run build   # Build for production
 ```
 
-## 📤 Deployment
-
-Deploy instantly on [Vercel](https://vercel.com/new), Netlify, or any static-friendly hosting platform for Next.js.
-
 ## 🔗 Links
 
 - GitHub: https://github.com/Kanak-75/ChronoCanvas
